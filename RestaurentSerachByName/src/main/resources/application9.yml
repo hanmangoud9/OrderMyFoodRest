@@ -1,0 +1,18 @@
+server:
+  port: 8091
+  
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
+  instance:
+    preferIpAddress: true
+    
+spring:
+ application:
+  name: RestaurentSearchByName
+ cloud:
+  config:
+     uri: http://localhost:8888
+     username: admin
+     password: ganesha9
